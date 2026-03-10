@@ -1,120 +1,123 @@
 <!DOCTYPE html>
-<html lange="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Student Record & Timetable</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #f4f6f9;
-                margin: 20px;
-            }
+<html lang="en">
 
-            h2 {
-                text-align:centre;
-            }
+<head>
+    <meta charset="UTF-8">
+    <title>Student Record & Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 20px;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+            background-color: #ffffff;
+        }
+        
+        caption {
+            font-size: 1.4cm;
+            margin: 10px;
+            font-weight: bold;
+        }
+        
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        thead {
+            background-color: #007BFF;
+            color: white;
+        }
+        
+        tfoot {
+            background-color: #f1f1f1;
+            font-weight: bold;
+        }
+        
+        .highlight {
+            background-color: #e9f7ef;
+        }
+    </style>
+</head>
 
-            table {
-                width: 100%;
-                border-collapse: collapse;
-                margin-bottom: 40px;
-                background-color: #ffffff;
-            }
+<body>
 
-            caption {
-                font-size: 1.4em;
-                margin: 10px;
-                font-weight: bold;
-            }
+    <h2>Student Record</h2>
 
-            th, td {
-                border: 1px solid #333;
-                padding: 10px;
-                text-align: center;
-            }
+    <table>
+        <caption>Academic Performance - Semester 1</caption>
 
-            thead {
-                background-color: #007BFF;
-                color: white;
-            }
+        <colgroup>
+            <col span="1" style="background-color: #f8f9fa;">
+            <col span="3">
+            <col span="1" style="background-color: #f8f9fa;">
+        </colgroup>
 
-            tfoot {
-                background-color: #f1f1f1;
-                font-weight: bold;
-            }
+        <thead>
+            <tr>
+                <th scope="col">Roll No</th>
+                <th scope="col">Student Name</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Marks</th>
+                <th scope="col">Grade</th>
+            </tr>
+        </thead>
 
-            .highlight {
-                background-color: #e9f7ef;
-            }
-        </style>
-    </head>
-    <body>
+        <tbody>
+            <tr>
+                <td rowspan="3">101</td>
+                <td rowspan="3">Spandan Gulhane</td>
+                <td>Mathematics</td>
+                <td>88</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>92</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>81</td>
+                <td>A</td>
+            </tr>
 
-        <h2>Student Record</h2>
+            <tr class="highlight">
+                <td rowspan="3">102</td>
+                <td rowspan="3">Radhe Mohan</td>
+                <td>Mathematics</td>
+                <td>75</td>
+                <td>B+</td>
+            </tr>
+            <tr class="highlight">
+                <td>Science</td>
+                <td>84</td>
+                <td>A</td>
+            </tr>
+            <tr class="highlight">
+                <td>English</td>
+                <td>79</td>
+                <td>B+</td>
+            </tr>
+        </tbody>
 
-        <table>
-            <caption>Academic Performance - Semester 1</caption>
-
-            <colgroup>
-            <col span="1" style="background-color:#f8f9fa;">
-        <col span="3">
-    <col span="1" style="background-color:#f8f9fa;">
-</colgroup>
-
-<thead>
-    <tr>
-        <th scope="col">Roll No</th>
-        <th scope="col">Student Name</th>
-        <th scope="col">Subject</th>
-        <th scope="col">Marks</th>
-        <th scope="col">Grade</th>
-    </tr>
-</thead>
-
-<tbody>
-    <tr>
-        <td rowspan="3">101</td>
-        <td rowspan="3">Spandan Gulhane</td>
-        <td>Mathematics</td>
-        <td>88</td>
-        <td>A</td>
-    </tr>
-    <tr>
-        <td>Science</td>
-        <td>92</td>
-        <td>A+</td>
-    </tr>
-    <tr>
-        <td>English</td>
-        <td>81</td>
-        <td>A</td>
-    </tr>
-
-    <tr class="highlight">
-        <td rowspan="3">102</td>
-        <td rowspan="3">Radhe Mohan</td>
-        <td>Mathematics</td>
-        <td>75</td>
-        <td>B+</td>
-    </tr>
-    <tr class="highlight">
-    <td>Science</td>
-    <td>84</td>
-    <td>A</td>
-    </tr>
-    <tr class="highlight">
-        <td>English</td>
-        <td>79</td>
-        <td>B+</td>
-    </tr>
-    </tbody>
-
-    <tfoot>
-        <tr>
-            <td colspan="3">Total Students</td>
-            <td colspan="2">2</td>
-        </tr>
-    </tfoot>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Students</td>
+                <td colspan="2">2</td>
+            </tr>
+        </tfoot>
     </table>
 
     <h2>Class Timetable</h2>
@@ -125,10 +128,10 @@
         <thead>
             <tr>
                 <th scope="col">Day</th>
-                <th scope="col">9:00 - 10.00</th>
-                <th scope="col">10.00 - 11.00</th>
-                <th scope="col">11.00 - 12.00</th>
-                <th scope="col">12.00 - 1:00</th>
+                <th scope="col">9:00 - 10:00</th>
+                <th scope="col">10:00 - 11:00</th>
+                <th scope="col">11:00 - 12:00</th>
+                <th scope="col">12:00 - 1:00</th>
             </tr>
         </thead>
 
@@ -141,7 +144,7 @@
                 <td>English</td>
             </tr>
             <tr>
-                <th scope="row">Tuesday</th>
+                <th scope="row">Tueday</th>
                 <td>English</td>
                 <td>Math</td>
                 <td>Computer</td>
@@ -161,6 +164,7 @@
             <tr>
                 <th scope="row">Friday</th>
                 <td colspan="2">Project Work</td>
+                <td>Sports</td>
             </tr>
         </tbody>
 
@@ -169,7 +173,8 @@
                 <td colspan="5">Note: Timings are subject to change.</td>
             </tr>
         </tfoot>
-    </table>
 
-    </body>
+    </table>
+</body>
+
 </html>
