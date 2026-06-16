@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Iframe Demo</title>
+    <style>
+      body {
+        font-family: Arial;
+        margin: 0;
+      }
+      header {
+        background-color: #4caf50;
+        color: white;
+        padding: 15px;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+      }
+      .menu {
+        width: 25%;
+        background: #f4f4f4;
+        padding: 10px;
+      }
+      .menu a {
+        display: block;
+        margin: 10px 0;
+        text-decoration: none;
+        color: black;
+      }
+      .content {
+        width: 75%;
+      }
+      iframe {
+        width: 100%;
+        height: 500px;
+        border: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Iframe Webpage Demo</h1>
+    </header>
+
+    <div class="container">
+      <!-- Navigation Menu -->
+      <div class="menu">
+        <h3>Menu</h3>
+        <a href="https://www.wikipedia.org" target="frame">Wikipedia</a>
+        <a href="https://www.google.com" target="frame">Google</a>
+        <a href="https://www.openai.com" target="frame">OpenAI</a>
+      </div>
+
+      <!-- Iframe Content Area -->
+      <div class="content">
+        <iframe name="frame"></iframe>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Embedded Google Map -->
+    <h2 style="text-align: center">Our Location</h2>
+
+    <iframe src="https://www.google.com/maps?q=Nagpur&output=embed"> </iframe>
+  </body>
+</html>
